@@ -6,12 +6,13 @@
   }
 
   
-  
-  button{
-    margin-right: 5px;
-    
+  h2{
+    text-align: center;
+    color: rgb(255, 253, 253);
   }
-  
+  .boton{
+    text-align: center;
+  }
  
   .imagenes1{
     width:50%;
@@ -42,6 +43,8 @@
     text-align: center;
     box-shadow:10px 10px 30px rgb(209, 75, 243);
     border-radius: 14px;
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
   }
   
   .education-block h3 {
@@ -82,6 +85,26 @@
     
   }
 
+  button{
+    background: rgb(246, 147, 250);
+    color:white;
+    text-decoration: none;
+    border: 2px solid  transparent;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 10px;
+}
+img{
+  border-radius: 30px;
+}
+
+button:hover{
+    background:transparent;
+    border:2px solid rgb(151, 104, 160);
+    cursor: pointer;
+}
  
   @media (max-width: 575.98px) { 
     h1{font-size:40px; line-height:normal;}

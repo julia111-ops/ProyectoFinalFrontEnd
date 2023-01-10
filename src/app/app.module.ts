@@ -13,6 +13,15 @@ import { ProyectsComponent } from './componentes/proyects/proyects.component';
 import {HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider, InterceptorService } from './service/interceptor-service';
+
+import { NewExperienciaComponent } from './componentes/experience/new-experiencia.component';
+import { NewEducacionComponent } from './componentes/experience/new-educacion.component';
+import { EditeducacionComponent } from './componentes/experience/editeducacion.component';
+import { EditexperienciaComponent } from './componentes/experience/editexperiencia.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,15 +32,23 @@ import { LoginComponent } from './componentes/login/login.component';
     FooterComponent,
     ProyectsComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    NewEducacionComponent,
+    EditeducacionComponent,
+    EditexperienciaComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

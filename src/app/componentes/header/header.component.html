@@ -31,17 +31,16 @@
 
       <div>
         <ul class="navbar-nav sm-icons">
-          <li><a class="nav-link" href="https://www.facebook.com/joaquin.vinolo/" target="_blank"><i
-                class="bi bi-facebook"></i></a>
-          </li>
-          <li><a class="nav-link" href="https://www.instagram.com/joaquin_vinolo/?hl=es-la" target="_blank"><i
+         
+          <li><a class="nav-link" href="https://www.instagram.com/inviern0intenso/?hl=es-la" target="_blank"><i
                 class="bi bi-instagram"></i></a></li>
-          <li><a class="nav-link" href="https://www.linkedin.com/in/joaqu%C3%ADn-vi%C3%B1olo-833327239/"
+          <li><a class="nav-link" href="https://www.linkedin.com/in/julia-vi%C3%B1olo-02a4b423b/"
               target="_blank"><i class="bi bi-linkedin"></i></a></li>
-          <li><a class="nav-link" href="https://github.com/joaquin9830?tab=repositories" target="_blank"><i
+          <li><a class="nav-link" href="https://github.com/julia111-ops" target="_blank"><i
                 class="bi bi-github"></i></a></li>
           
-          <button (click)="login()">Login</button>
+          <button (click)="login()" *ngIf="!isLogged">Login</button>
+          <button (click)="onLogout()" *ngIf="isLogged">Logout</button>
         </ul>
       </div>
 
