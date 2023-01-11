@@ -17,7 +17,7 @@
                 <p>{{Proyectos.descripcionE}}</p>
                
                 <img class="imagenes1"  src="../../../assets/proyecto ARG.png">
-                 <div class="boton2"> 
+                 <div class="boton2" *ngIf="isLogged"> 
                 <button routerLink="/editpro/{{Proyectos.id}}"><i class="bi bi-pencil"></i></button>
                 <button (click)="delete(Proyectos.id)"><i class="bi bi-x-circle"></i></button>
                 </div>

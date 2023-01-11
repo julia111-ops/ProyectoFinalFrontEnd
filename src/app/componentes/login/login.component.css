@@ -29,3 +29,6 @@ button:hover{
     border:2px solid rgb(218, 81, 206);
     cursor: pointer;
 }
+.card-body{
+  color:#654ea3;
+}

@@ -8,11 +8,14 @@
             <p>{{About.descripcionE}}</p>
              
            
-            <button routerLink="/editabout/{{About.id}}"><i class="bi bi-pencil"> Editar</i></button>
+            <button *ngIf="isLogged" routerLink="/editabout/{{About.id}}"><i class="bi bi-pencil"> Editar</i></button>
             
         </div>
-        <button routerLink="/nuevoabout" ><i class="bi bi-plus-circle"> Agregar</i></button>
+        <button *ngIf="isLogged" routerLink="/nuevoabout" ><i class="bi bi-plus-circle"> Agregar</i></button>
        
         </div>
     </section>
-    </div>
+</div>
+
+
+    

@@ -25,7 +25,8 @@ const routes: Routes = [
   {path:'nuevopro',component:NewproyectComponent},
   {path:'editpro/:id',component:EditproyectComponent},
   {path: 'nuevoabout', component:NewaboutComponent} ,
-  {path: 'editabout/:id', component:EditaboutComponent}
+  {path: 'editabout/:id', component:EditaboutComponent},
+  
   
 
 ];
