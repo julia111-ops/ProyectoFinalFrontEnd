@@ -2,15 +2,17 @@
     <section class="about">
         <div class="main">
         <img src="../../../assets/foto (2).png" alt="foto de perfil">
-        <div class="about-text">
+        <div class="about-text" *ngFor="let About of about">
             <h1>{{persona.nombre}} {{persona.apellido}}</h1>
-            <h5>Desarrolladora web full stack</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut ad voluptatem porro deleniti, voluptatum dolorum possimus cupiditate nostrum laudantium tempore dolorem aspernatur asperiores, dolor illo deserunt doloribus qui. Doloremque!</p>
-            
-            <button><i class="bi bi-pencil"> Editar</i></button>
-            
+            <h5>{{About.nombreE}}</h5>
+            <p>{{About.descripcionE}}</p>
+             
+           
+            <button routerLink="/editabout/{{About.id}}"><i class="bi bi-pencil"> Editar</i></button>
             
         </div>
+        <button routerLink="/nuevoabout" ><i class="bi bi-plus-circle"> Agregar</i></button>
+       
         </div>
     </section>
     </div>
